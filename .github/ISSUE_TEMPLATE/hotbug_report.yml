@@ -31,7 +31,7 @@ body:
     id: steps
     attributes:
       label: 再現手順
-      description: バグを再現するための手順を番号付きで記載してください (例: 1. Go to '...', 2. Click on '...')
+      description: "バグを再現するための手順を番号付きで記載してください (例: 1. Go to '...', 2. Click on '...')"
       placeholder: "再現手順を記入してください"
     validations:
       required: true
