@@ -1,0 +1,23 @@
+name: Low Priority Issue
+description: 重要度が低い問題の報告を行うテンプレート
+title: "[Low Priority Issue]: "
+labels: 
+  - issue
+  - 🍵優先度：低
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 🚨 重要な問題の説明
+        問題の概要を記述してください。
+
+  - type: textarea
+    id: critical_description
+    attributes:
+      label: 問題の説明
+      description: 問題の詳細を入力してください
+      placeholder: "問題の詳細な説明を記入してください"
+    validations:
+      required: true
