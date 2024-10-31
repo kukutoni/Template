@@ -3,7 +3,7 @@ description: 重要な問題の報告を行うテンプレート
 title: "[High Priority Issue]: "
 labels: 
   - issue
-  - "🔥優先度：高"  # 新しく作成した優先度ラベル
+  - "🔥優先度：高"
 assignees: []
 
 body:
