@@ -1,6 +1,6 @@
-name: 優先度高バグ報告
-description: 重大なバグの報告を行うテンプレート
-title: "[High Priority Bug]: "
+name: High Priority Issue
+description: 重大な問題の報告を行うテンプレート
+title: "[High Priority Issue]: "
 labels: 
   - bug
   - priority: high
@@ -10,15 +10,15 @@ body:
   - type: markdown
     attributes:
       value: |
-        ## 🚨 重大なバグの説明
-        重大なバグの概要を記述してください。緊急対応が必要な場合は、その理由も含めてください。
+        ## 🚨 重大な問題の説明
+        重大な問題の概要を記述してください。緊急対応が必要な場合は、その理由も含めてください。
 
   - type: textarea
     id: critical_description
     attributes:
-      label: バグの説明
-      description: 重大なバグの詳細を入力してください
-      placeholder: "バグの詳細な説明を記入してください"
+      label: 問題の説明
+      description: 重大な問題の詳細を入力してください
+      placeholder: "問題の詳細な説明を記入してください"
     validations:
       required: true
 
@@ -26,13 +26,13 @@ body:
     attributes:
       value: |
         ## 🔄 再現手順
-        このバグを再現するための手順を明確に記載してください。
+        この問題を再現するための手順を明確に記載してください。
 
   - type: textarea
     id: steps
     attributes:
       label: 再現手順
-      description: バグを再現するための手順を番号付きで記載してください
+      description: 問題を再現するための手順を番号付きで記載してください
       placeholder: "例: 1. Go to '...', 2. Click on '...'"
     validations:
       required: true
@@ -41,7 +41,7 @@ body:
     id: impact
     attributes:
       label: 影響範囲
-      description: このバグが影響を及ぼす機能や範囲について説明してください
+      description: この問題が影響を及ぼす機能や範囲について説明してください
       placeholder: "影響範囲を記入してください"
     validations:
       required: true
