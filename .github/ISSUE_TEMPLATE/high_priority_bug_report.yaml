@@ -1,0 +1,67 @@
+name: 優先度高バグ報告
+description: 重大なバグの報告を行うテンプレート
+title: "[High Priority Bug]: "
+labels: 
+  - bug
+  - priority: high
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 🚨 重大なバグの説明
+        重大なバグの概要を記述してください。緊急対応が必要な場合は、その理由も含めてください。
+
+  - type: textarea
+    id: critical_description
+    attributes:
+      label: バグの説明
+      description: 重大なバグの詳細を入力してください
+      placeholder: "バグの詳細な説明を記入してください"
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ## 🔄 再現手順
+        このバグを再現するための手順を明確に記載してください。
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: 再現手順
+      description: バグを再現するための手順を番号付きで記載してください
+      placeholder: "例: 1. Go to '...', 2. Click on '...'"
+    validations:
+      required: true
+
+  - type: textarea
+    id: impact
+    attributes:
+      label: 影響範囲
+      description: このバグが影響を及ぼす機能や範囲について説明してください
+      placeholder: "影響範囲を記入してください"
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ## 🖥️ 環境情報
+        使用環境を記入してください
+
+  - type: input
+    id: environment_os
+    attributes:
+      label: OS
+      description: 使用しているOSを記入してください
+      placeholder: "例: Windows, macOS, Linux"
+
+  - type: input
+    id: environment_browser
+    attributes:
+      label: ブラウザ
+      description: 使用しているブラウザを記入してください
+      placeholder: "例: Chrome, Safari"
