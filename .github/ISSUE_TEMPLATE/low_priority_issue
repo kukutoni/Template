@@ -3,7 +3,7 @@ description: 重要度が低い問題の報告を行うテンプレート
 title: "[Low Priority Issue]: "
 labels: 
   - issue
-  - 🍵優先度：低
+  - "🍵優先度：低"
 assignees: []
 
 body:
