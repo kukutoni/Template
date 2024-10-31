@@ -1,62 +1,108 @@
-name: Hot Bug Report
-description: File a bug report
-title: "[Bug]: "
-labels: ["bug", "triage"]
-assignees:
-  - octocat
+name: バグ報告
+description: バグの報告を行う際のテンプレート
+title: "[Bug] "
+labels: 
+  - bug
+assignees: []
+
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to fill out this bug report!
+        ## 🐛 バグの説明
+        バグの簡単な説明を入力してください
+
+  - type: textarea
+    id: description
+    attributes:
+      label: バグの説明
+      description: バグの簡単な説明を入力してください
+      placeholder: バグの詳細な説明を記入してください
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ## 🔄 再現手順
+        バグを再現するための手順を番号付きで記載してください
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: 再現手順
+      description: バグを再現するための手順を番号付きで記載してください
+      placeholder: 例: 
+        1. Go to '...'
+        2. Click on '...'
+        3. Scroll down to '...'
+        4. See error
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ## 🎯 期待される挙動
+        正常な動作がどのようになるかを入力してください
+
+  - type: textarea
+    id: expected_behavior
+    attributes:
+      label: 期待される挙動
+      description: 正常な動作がどのようになるかを入力してください
+      placeholder: 期待される挙動の詳細を記入してください
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ## 📸 スクリーンショット
+        必要に応じてスクリーンショットを追加してください
+
   - type: input
-    id: contact
+    id: screenshot
     attributes:
-      label: Contact Details
-      description: How can we get in touch with you if we need more info?
-      placeholder: ex. email@example.com
-    validations:
-      required: false
+      label: スクリーンショットリンク
+      description: 必要に応じてスクリーンショットのリンクを入力してください
+      placeholder: 例: https://example.com/screenshot.png
+
+  - type: markdown
+    attributes:
+      value: |
+        ## 🖥️ 環境
+        お使いのOSやブラウザのバージョンなどを記載してください
+
+  - type: input
+    id: environment_os
+    attributes:
+      label: OS
+      description: 使用しているOSを記入してください
+      placeholder: 例: Windows, macOS, Linux
+
+  - type: input
+    id: environment_browser
+    attributes:
+      label: ブラウザ
+      description: 使用しているブラウザを記入してください
+      placeholder: 例: Chrome, Safari
+
+  - type: input
+    id: environment_version
+    attributes:
+      label: バージョン
+      description: 使用しているバージョンを記入してください
+      placeholder: 例: 22
+
+  - type: markdown
+    attributes:
+      value: |
+        ## 📝 その他の情報
+        その他、バグに関連する情報があれば記載してください
+
   - type: textarea
-    id: what-happened
+    id: additional_info
     attributes:
-      label: What happened?
-      description: Also tell us, what did you expect to happen?
-      placeholder: Tell us what you see!
-      value: "A bug happened!"
-    validations:
-      required: true
-  - type: dropdown
-    id: version
-    attributes:
-      label: Version
-      description: What version of our software are you running?
-      options:
-        - 1.0.2 (Default)
-        - 1.0.3 (Edge)
-    validations:
-      required: true
-  - type: dropdown
-    id: browsers
-    attributes:
-      label: What browsers are you seeing the problem on?
-      multiple: true
-      options:
-        - Firefox
-        - Chrome
-        - Safari
-        - Microsoft Edge
-  - type: textarea
-    id: logs
-    attributes:
-      label: Relevant log output
-      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
-      render: shell
-  - type: checkboxes
-    id: terms
-    attributes:
-      label: Code of Conduct
-      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com)
-      options:
-        - label: I agree to follow this project's Code of Conduct
-          required: true
+      label: その他の情報
+      description: バグに関連する情報があれば記載してください
