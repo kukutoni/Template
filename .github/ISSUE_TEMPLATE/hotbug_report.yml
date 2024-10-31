@@ -17,7 +17,7 @@ body:
     attributes:
       label: バグの説明
       description: バグの簡単な説明を入力してください
-      placeholder: バグの詳細な説明を記入してください
+      placeholder: "バグの詳細な説明を記入してください"
     validations:
       required: true
 
@@ -31,12 +31,8 @@ body:
     id: steps
     attributes:
       label: 再現手順
-      description: バグを再現するための手順を番号付きで記載してください
-      placeholder: 例: 
-        1. Go to '...'
-        2. Click on '...'
-        3. Scroll down to '...'
-        4. See error
+      description: バグを再現するための手順を番号付きで記載してください (例: 1. Go to '...', 2. Click on '...')
+      placeholder: "再現手順を記入してください"
     validations:
       required: true
 
@@ -51,7 +47,7 @@ body:
     attributes:
       label: 期待される挙動
       description: 正常な動作がどのようになるかを入力してください
-      placeholder: 期待される挙動の詳細を記入してください
+      placeholder: "期待される挙動の詳細を記入してください"
     validations:
       required: true
 
@@ -66,7 +62,7 @@ body:
     attributes:
       label: スクリーンショットリンク
       description: 必要に応じてスクリーンショットのリンクを入力してください
-      placeholder: 例: https://example.com/screenshot.png
+      placeholder: "例: https://example.com/screenshot.png"
 
   - type: markdown
     attributes:
@@ -79,21 +75,21 @@ body:
     attributes:
       label: OS
       description: 使用しているOSを記入してください
-      placeholder: 例: Windows, macOS, Linux
+      placeholder: "例: Windows, macOS, Linux"
 
   - type: input
     id: environment_browser
     attributes:
       label: ブラウザ
       description: 使用しているブラウザを記入してください
-      placeholder: 例: Chrome, Safari
+      placeholder: "例: Chrome, Safari"
 
   - type: input
     id: environment_version
     attributes:
       label: バージョン
       description: 使用しているバージョンを記入してください
-      placeholder: 例: 22
+      placeholder: "例: 22"
 
   - type: markdown
     attributes:
